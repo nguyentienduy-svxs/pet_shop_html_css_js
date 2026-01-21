@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+#container{
+   display:flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   padding: 10px 200px;
+    
+}
+.card img{
+    width: 100%;
+    height: 260.23px;
+    border-radius: 31px;
+   
+}
+
+.card{
+    width: calc((100% - 60px) / 4);
+    border-radius: 31px;
+    transition: all 0.6s ease;
+    height: 350px;
+    padding: 10px 10px;
+   
+}
+.card img{
+    transition: all 0.5s ease;
+}
+.card:hover img{
+  transform: scale(1.03);
+  opacity: 0.5;
+}
+.card:hover h3,.card:hover span{
+    color: grey;
+}
+.card:hover{
+    border: 1px solid grey;
+}
+.card h3{
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+
+}
+.card p{
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.card a{
+    text-decoration: none;
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.text h1{
+    width: 45%;
+    font-size: 40px;
+    text-align: center;
+}
+.orange{
+    color:#FFBD59;
+}
+.text p{
+    color:#494949;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+}
+.color{
+    font-weight: 800;
+}
+
+.khoi {
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 39%;
+    color: black;
+    background-color: greenyellow;
+    padding: 10px 10px;
+    border-radius: 31px;
+    border: 1px solid grey;
+    transition: all 0.5s ease;
+}
+.card:hover .khoi{
+    display: block;
+}
+@media screen and (min-width: 2300px) {
+    #container{
+        padding: 10px 530px;
+    }
+}
