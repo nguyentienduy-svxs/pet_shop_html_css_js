@@ -34,7 +34,10 @@ const deleteDog = async (e)=>{
   if(name){
      const dog=data.find((currentVal)=>currentVal.name.toLowerCase()===(name.toLowerCase()));
      console.log("🚀 ~ deleteDog ~ dog:", dog)
-     
+     if(!dog){
+      alert("Xóa thất bại! Vui lòng nhập đủ và đúng tên chó");
+      
+     }
      const deleted= await fetch("https://69706bd278fec16a63fd9efe.mockapi.io/dogs/"+dog.id,{
     method: "DELETE"
    }) ;
@@ -47,6 +50,7 @@ const deleteDog = async (e)=>{
    
  } catch (error) {
   console.log(error)
+ 
  }
 }
 
