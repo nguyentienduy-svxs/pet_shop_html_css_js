@@ -10,6 +10,7 @@ async function fetchDogById(){
         console.log("🚀 ~ fetchDogById ~ data:", data)
         const html= `
         <a href="./index.html" class="back">Quay lại</a>
+        
         <div class="card">
         <img class="image" src="${data.image}" alt="anh"/>
             <div class="contentRight">

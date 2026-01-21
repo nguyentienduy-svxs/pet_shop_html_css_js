@@ -102,6 +102,25 @@
 .card:hover .khoi{
     display: block;
 }
+#text{
+    padding: 10px;
+    color: #494949;
+    border-radius: 31px;
+    border: 1px solid #494949;
+}
+#submit{
+    padding: 10px;
+    border: 1px solid #494949;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: red;
+    color: black;
+    border-radius: 31px;
+    cursor: pointer;
+}
+form{
+    margin-left: 207px;
+}
 @media screen and (min-width: 2300px) {
     #container{
         padding: 10px 530px;
